@@ -67,7 +67,17 @@ main {
     img {
         width: 100%;
         display: block;
-        margin-bottom: -44px;
+        position: relative;
+        bottom: -44px;
+        z-index: 1;
+    }
+
+    .decorative-square {
+        height: 50px;
+        width: 100%;
+        position: relative;
+        background-color: var(--dirt-yellow);
+        bottom: -196px;
     }
 }
 
