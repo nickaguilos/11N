@@ -1,6 +1,15 @@
+:root {
+    --dirt-yellow: #ffcc01;
+}
+
 html {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 table {
@@ -21,17 +30,49 @@ th {
 hr {
     border: none;
     height: 2px; 
-    background-color: #b50314; 
+    background-color: var(--dirt-yellow); 
     margin: 20px 0; 
 }
 section {
     padding: 0px;
 }
 
+main {
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+
 .container { display: flex; }
 .column { width: 20%; padding: 10px; box-sizing: border-box; }
 .cp-item { margin-bottom: 10px; 
 
+}
+
+#site-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 0;
+
+    #logo {
+        max-width: 200px;
+    }
+}
+
+#site-foot {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        display: block;
+        margin-bottom: -44px;
+    }
+}
+
+#modal-wrapper {
+    display: none;
 }
 
 #saveBtn {
